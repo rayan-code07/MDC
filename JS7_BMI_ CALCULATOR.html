@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>
+			BMI CALCULATOR
+		</title>
+	</head>
+	<body>
+		<script language="javascript">
+			function div() 
+				{
+				var a = document.getElementById("t1").value;
+				var b = document.getElementById("t2").value;
+
+				if (!a || !b || a <= 0 || b <= 0) {
+					alert("Please enter valid height and weight.");
+					
+				}
+
+				var c = b / (a * a); // BMI formula
+				document.getElementById("t3").value = c.toFixed(2);
+				}
+		</script>
+
+		<center>
+			<h1>BMI CALCULATOR</h1>
+			Height : <input type="text" name="t1" id="t1"> <br><br>
+			Weight : <input type="text" name="t2" id="t2"> <br><br>
+			<input type="button" name="b1" id="b1" value="Calculate" onclick="div()"><br><br>
+			BMI &nbsp;&nbsp;&nbsp;: <input type="text" name="t3" id="t3">
+		</center>
+	</body>
+</html>

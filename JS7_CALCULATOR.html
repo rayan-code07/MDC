@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>CALCULATOR</Title>
+</head>
+<body>
+<script language " javascript">
+	function plus()
+	{
+		var a = document.getElementById("t1").value;
+		var b = document.getElementById("t2").value;
+		var c = eval ( a + "+" + b );
+		document.getElementById("t3").value = c;
+	}
+	function minus()
+	{
+		var a = document.getElementById("t1").value;
+		var b = document.getElementById("t2").value;
+		var c = eval ( a + "-" + b );
+		document.getElementById("t3").value = c;
+	}
+	function mult()
+	{
+		var a = document.getElementById("t1").value;
+		var b = document.getElementById("t2").value;
+		var c = eval ( a + "*" + b );
+		document.getElementById("t3").value = c;
+	}
+	function div()
+	{
+		var a = document.getElementById("t1").value;
+		var b = document.getElementById("t2").value;
+		var c = eval ( a + "/" + b );
+		document.getElementById("t3").value = c;
+	}
+
+
+
+	</script>
+	</body>
+	NO 1 : <input type ="text" name="t1" id="t1"> <br><br>
+	NO 2 : <input type ="text" name="t2" id="t2"> <br><br>
+	<input type = "button" name="b1" id="b1" value="+" onclick= "plus()"><br>
+        <input type="button" name="b2" id="b2" value= "-" onclick= "minus()"><br>
+	<input type="button" name="b3" id="b3" value= "*" onclick= "mult()"><br>
+	<input type="button" name="b4" id="b4" value= "/" onclick= "div()"><br><br>
+	<input type="text" name="t3" id="t3">
+</body>
+</html>

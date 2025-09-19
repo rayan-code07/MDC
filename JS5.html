@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<script language="JavaScript">
+		function move()
+		{
+			var a = document.getElementById("t1").value;
+			document.getElementById("t2").value = a;
+			document.getElementById("t1").value = "";
+		}
+		</script>
+		<input type="text" name="t1" id="t1"><br>
+		<input type="button" name="b1" id="b1" value="MOVE"
+		onclick="move()"><br>
+		<input type="text" name="t2" id="t2">
+	</body>
+</html>
